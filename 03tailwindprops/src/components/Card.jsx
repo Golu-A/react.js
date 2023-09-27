@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card ({username, btnText = 'Click ME'}){  // idhar pe humne username he direct destructure kar k dal diya h, to humko baar baar username.props nhi likhna padega & btnText= 'Click ME' ek default value, jiska dene ka kaaran ye h ki agar isme pehle se value nahi di gyi hogi to ye pass ho jaegi nahi to doosri value pass ho jaegi, idhar dene se readability jyada ho jati h 
-    
+
     // console.log('props', props);
     // console.log(props.username);
     console.log(username);
@@ -21,7 +21,7 @@ function Card ({username, btnText = 'Click ME'}){  // idhar pe humne username he
               debitis?
             </p>
             <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-              {btnText || 'Click ME'}
+              {/* {btnText || 'Click ME'} ye shi h lekin readibily nhi h  */}
             </button>
           </div>
         </div>
